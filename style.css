@@ -13,6 +13,8 @@ img{
 /* ========= PAGINA ========= */
 
 body{
+    background:#111;
+    font-family:Georgia, serif;
 
 }
 
@@ -20,21 +22,40 @@ body{
 
 .container{
 
+    width:1260px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:260px 1fr 260px;
+
+    gap:20px;
+
 }
 
 /* ========= SIDEBAR ========= */
 
 .left-sidebar{
+    min-height:1200px;
+
+    background:#666;
 
 }
 
 .right-sidebar{
+    min-height:1200px;
+
+    background:#777;
 
 }
 
 /* ========= CONTENUTO ========= */
 
 .content{
+    background:#888;
+
+    min-height:1200px;
 
 }
 
