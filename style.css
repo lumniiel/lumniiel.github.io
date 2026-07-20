@@ -6,6 +6,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+   justify-content:center;
 }
 
 img{
@@ -33,7 +34,6 @@ body{
 .wrapper{
 
     width:1320px;
-   justify-content:center;
 
     margin-left:auto;
     margin-right:auto;
