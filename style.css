@@ -31,9 +31,14 @@ body{
 ===================================== */
 
 .wrapper{
-.wrapper{
     width:min(95vw, 700px);
     margin:20px auto;
+   background:#f7f3ed;    
+   border:3px solid red;     
+   border-radius:18px;     
+   padding:14px;     
+   position:relative;     
+   left:0;
 }
 
 
