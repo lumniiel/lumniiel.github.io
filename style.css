@@ -20,13 +20,37 @@ body{
 .page{
 
     width:100%;
-
     max-width:393px;
-
     min-height:100vh;
 
     background:#f7f3ed;
 
-    border:1px solid #2d1b16;
+    border:1px solid #4a3027;
+    border-radius:18px;
+
+    padding:10px;
+
+}
+
+.layout{
+
+    display:grid;
+
+    grid-template-columns:
+    92px
+    1fr
+    92px;
+
+    gap:8px;
+
+}
+
+.left,
+.center,
+.right{
+
+    min-height:300px;
+
+    border:1px solid #4a3027;
 
 }
