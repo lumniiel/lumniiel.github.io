@@ -33,14 +33,21 @@ body{
 .wrapper{
 
     width:1320px;
-    margin:0 auto;
+
+    margin-left:auto;
+    margin-right:auto;
 
     background:#f7f3ed;
 
-    border:3px solid #5b3b31;
+    border:3px solid red;
+
     border-radius:18px;
 
     padding:14px;
+
+    position:relative;
+    left:0;
+
 }
 
 
