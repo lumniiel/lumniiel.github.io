@@ -31,23 +31,9 @@ body{
 ===================================== */
 
 .wrapper{
-
-    width:1320px;
-
-    margin-left:auto;
-    margin-right:auto;
-
-    background:#f7f3ed;
-
-    border:3px solid red;
-
-    border-radius:18px;
-
-    padding:14px;
-
-    position:relative;
-    left:0;
-
+.wrapper{
+    width:min(95vw, 700px);
+    margin:20px auto;
 }
 
 
@@ -56,18 +42,8 @@ body{
 ===================================== */
 
 .container{
-
     display:grid;
-
-    grid-template-columns:
-    245px
-    700px
-    245px;
-
-    gap:18px;
-
-    justify-content:center;
-
+    grid-template-columns: 1fr;
 }
 
 
