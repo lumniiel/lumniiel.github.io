@@ -18,12 +18,13 @@ img{
 ===================================== */
 
 body{
-
     background:#111;
     font-family:Georgia, serif;
 
-    padding:20px;
+    display:flex;
+    justify-content:center;
 
+    padding:20px;
 }
 
 /* =====================================
