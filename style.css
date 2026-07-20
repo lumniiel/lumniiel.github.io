@@ -59,26 +59,30 @@ LAYOUT
     display:grid;
 
     grid-template-columns:
-    90px
+    100px
     1fr
-    90px;
+    100px;
 
-    gap:3px;
-
-    align-items:start;
+    gap:4px;
 
 }
 
 /* ==========================
-SIDEBAR
+TELAI
 ========================== */
 
-.left-sidebar,
-.right-sidebar{
+.sidebar-frame,
+.center-frame{
+
+    border:1px solid #2b1d18;
+
+    padding:4px;
 
     display:flex;
+
     flex-direction:column;
-    gap:10px;
+
+    gap:6px;
 
 }
 
@@ -86,98 +90,54 @@ SIDEBAR
 CENTRO
 ========================== */
 
-.content{
-
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-
-}
-
-.hero{
-    height:95px;
-}
-
-.intro{
-    height:110px;
-}
-
-.divider{
-    height:18px;
-}
-
 .top-grid{
 
     display:grid;
+
     grid-template-columns:1fr 1fr;
-    gap:10px;
+
+    gap:6px;
 
 }
+
+/* ==========================
+ALTEZZE
+========================== */
+
+.hero{height:95px;}
+
+.intro{height:70px;}
+
+.divider{height:10px;}
 
 .about,
-.currently{
-    height:180px;
-}
+.currently{height:150px;}
 
-.interests{
-    height:120px;
-}
+.interests{height:90px;}
 
-.updates{
-    height:180px;
-}
+.updates{height:150px;}
 
-/* ==========================
-SIDEBAR SINISTRA
-========================== */
+.wolf{height:95px;}
 
-.wolf{
-    height:95px;
-}
+.menu{height:115px;}
 
-.menu{
-    height:130px;
-}
+.moon{height:100px;}
 
-.moon{
-    height:110px;
-}
+.news{height:105px;}
 
-.news{
-    height:110px;
-}
+.player{height:90px;}
 
-.player{
-    height:90px;
-}
+.status{height:70px;}
 
-.status{
-    height:70px;
-}
+.bat{height:95px;}
 
-/* ==========================
-SIDEBAR DESTRA
-========================== */
+.extra{height:135px;}
 
-.bat{
-    height:95px;
-}
+.links{height:120px;}
 
-.extra{
-    height:140px;
-}
+.buttons{height:85px;}
 
-.links{
-    height:140px;
-}
-
-.buttons{
-    height:100px;
-}
-
-.credits{
-    height:120px;
-}
+.credits{height:110px;}
 
 /* ==========================
 BOX
@@ -189,6 +149,6 @@ BOX
 
     border:2px solid #5b3b31;
 
-    border-radius:10px;
+    border-radius:8px;
 
 }
