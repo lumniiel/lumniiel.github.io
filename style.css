@@ -1,142 +1,16 @@
-/* ========= RESET ========= */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-img{
-    display:block;
-}
-
-/* ========= PAGINA ========= */
-
 body{
     background:#111;
-
-    font-family:Georgia, serif;
-
-    padding:20px;
-
 }
-/* ========= WRAPPER ========= */
 
 .wrapper{
-
-    width:100%;
-
-    margin:20px auto;
-
-    padding:16px;
-
-    background:#f7f3ed;
-
-    border:3px solid #5b3b31;
-
-    border-radius:18px;
-
-}
-
-/* ========= CONTAINER ========= */
-
-.container{
-
-    display:grid;
-
-    grid-template-columns:220px 1fr 220px;
-
-    gap:16px;
-
-}
-
-/* ========= SIDEBAR ========= */
-
-.left-sidebar{
-    min-height:1200px;
-
-    background:#666;
-
-}
-
-.right-sidebar{
-    min-height:1200px;
-
-    background:#777;
-
-}
-
-/* ========= CONTENUTO ========= */
-
-.content{
-      background:#888;
-
-    outline:3px solid lime;
-    display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-    padding-top:20px;
-
-    min-height:1200px;
-
-}
-
-.hero{
-
-}
-
-.intro{
-
-}
-
-.divider{
-
-}
-
-.top-grid{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:18px;
-
-}
-
-.about{
-
-}
-
-.currently{
-
-}
-
-.interests{
-
-}
-
-.updates{
-
-}
-
-/* ========= FOOTER ========= */
-
-.footer{
-
-}
-
-/* ========= PANEL ========= */
-
-.panel{
-
-    background:#f8f4ee;
-
-    border:2px solid #5b3b31;
-
-    border-radius:10px;
-
-    padding:18px;
-
+    width:500px;
+    height:500px;
+    background:red;
+    margin:50px auto;
 }
