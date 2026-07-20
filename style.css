@@ -45,24 +45,16 @@ body{
 
 }
 
-.left,
-.center,
-.right{
-
-    display:flex;
-    flex-direction:column;
-
-}
-
 .left-frame,
 .center-frame,
 .right-frame{
 
     border:1px solid #4a3027;
     padding:8px;
-
     min-height:300px;
-    
+
+}
+
 .left-frame{
 
     display:flex;
@@ -71,4 +63,64 @@ body{
 
 }
 
+.center-frame{
+
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+
 }
+
+.right-frame{
+
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+
+}
+
+.wolf{
+
+    height:96px;
+
+}
+
+.menu{
+
+    height:126px;
+
+}
+
+.moon{
+
+    height:108px;
+
+}
+
+.news{
+
+    height:112px;
+
+}
+
+.player{
+
+    height:90px;
+
+}
+
+.status{
+
+    height:82px;
+
+}
+
+.panel{
+
+    background:#f8f4ee;
+
+    border:2px solid #5b3b31;
+
+    border-radius:8px;
+
+    }
