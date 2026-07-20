@@ -18,13 +18,18 @@ img{
 ===================================== */
 
 body{
+
     background:#111;
     font-family:Georgia, serif;
 
     display:flex;
     justify-content:center;
+    align-items:flex-start;
 
     padding:20px;
+
+    min-height:100vh;
+
 }
 
 /* =====================================
@@ -32,6 +37,7 @@ body{
 ===================================== */
 
 .wrapper{
+
     width:1320px;
 
     margin:0;
@@ -42,6 +48,7 @@ body{
 
     border:3px solid #5b3b31;
     border-radius:18px;
+
 }
 
 /* =====================================
