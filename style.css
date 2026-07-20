@@ -1,1 +1,132 @@
+/* ==========================
+RESET
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+/* ==========================
+PAGINA
+========================== */
+
+body{
+
+    background:#111;
+
+    font-family:Georgia,serif;
+
+    display:flex;
+    justify-content:center;
+
+    padding:12px;
+
+}
+
+/* ==========================
+WRAPPER
+========================== */
+
+.wrapper{
+
+    width:100%;
+
+    max-width:430px;
+
+    background:#f7f3ed;
+
+    border:3px solid #5b3b31;
+
+    border-radius:18px;
+
+    padding:10px;
+
+}
+
+/* ==========================
+LAYOUT
+========================== */
+
+.container{
+
+    display:grid;
+
+    grid-template-columns:
+
+    90px
+
+    1fr
+
+    90px;
+
+    gap:10px;
+
+    align-items:start;
+
+}
+
+/* ==========================
+SIDEBAR
+========================== */
+
+.left-sidebar,
+.right-sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+/* ==========================
+CENTRO
+========================== */
+
+.content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+/* ==========================
+ABOUT + CURRENTLY
+========================== */
+
+.top-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+}
+
+/* ==========================
+BOX
+========================== */
+
+.panel{
+
+    background:#f8f4ee;
+
+    border:2px solid #5b3b31;
+
+    border-radius:10px;
+
+    padding:14px;
+
+}
