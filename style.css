@@ -78,8 +78,16 @@ COLONNE
 .center,
 .right{
 
-    min-height:720px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
 
-    border:1px solid #3b2a23;
+}
+
+.wolf,
+.hero,
+.bat{
+
+    min-height:100px;
 
 }
