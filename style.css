@@ -1,1 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+
+    background:#111;
+
+    display:flex;
+    justify-content:center;
+
+    padding:10px;
+
+    font-family:Georgia,serif;
+
+}
+
+.page{
+
+    width:100%;
+
+    max-width:393px;
+
+    min-height:100vh;
+
+    background:#f7f3ed;
+
+    border:1px solid #2d1b16;
+
+}
