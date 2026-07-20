@@ -33,6 +33,7 @@ body{
 .wrapper{
 
     width:1320px;
+   justify-content:center;
 
     margin-left:auto;
     margin-right:auto;
