@@ -59,11 +59,14 @@ LAYOUT
     display:grid;
 
     grid-template-columns:
-    26%
-    48%
-    26%;
 
-    gap:4px;
+    minmax(85px,22%)
+
+    1fr
+
+    minmax(85px,22%);
+
+    gap:8px;
 
 }
 
