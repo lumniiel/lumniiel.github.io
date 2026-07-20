@@ -24,15 +24,15 @@ body{
 
 .wrapper{
 
-    width:1320px;
+    width:1360px;
 
     margin:20px auto;
 
-    padding:12px;
+    padding:20px;
 
     background:#f7f3ed;
 
-    border:3px solid red;
+    border:3px solid #5b3b31;
 
     border-radius:18px;
 
