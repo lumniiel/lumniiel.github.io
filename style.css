@@ -59,96 +59,24 @@ LAYOUT
     display:grid;
 
     grid-template-columns:
-    100px
-    1fr
-    100px;
+    26%
+    48%
+    26%;
 
     gap:4px;
 
 }
 
 /* ==========================
-TELAI
+COLONNE
 ========================== */
 
-.sidebar-frame,
-.center-frame{
+.left,
+.center,
+.right{
 
-    border:1px solid #2b1d18;
+    min-height:720px;
 
-    padding:4px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:6px;
-
-}
-
-/* ==========================
-CENTRO
-========================== */
-
-.top-grid{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:6px;
-
-}
-
-/* ==========================
-ALTEZZE
-========================== */
-
-.hero{height:95px;}
-
-.intro{height:70px;}
-
-.divider{height:10px;}
-
-.about,
-.currently{height:150px;}
-
-.interests{height:90px;}
-
-.updates{height:150px;}
-
-.wolf{height:95px;}
-
-.menu{height:115px;}
-
-.moon{height:100px;}
-
-.news{height:105px;}
-
-.player{height:90px;}
-
-.status{height:70px;}
-
-.bat{height:95px;}
-
-.extra{height:135px;}
-
-.links{height:120px;}
-
-.buttons{height:85px;}
-
-.credits{height:110px;}
-
-/* ==========================
-BOX
-========================== */
-
-.panel{
-
-    background:#f8f4ee;
-
-    border:2px solid #5b3b31;
-
-    border-radius:8px;
+    border:1px solid #3b2a23;
 
 }
