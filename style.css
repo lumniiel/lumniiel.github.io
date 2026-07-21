@@ -7,21 +7,18 @@
 body{
 
     background:#111;
+    font-family:Georgia,serif;
 
     display:flex;
     justify-content:center;
 
     padding:10px;
 
-    font-family:Georgia,serif;
-
 }
 
 .page{
 
-    width:100%;
-    max-width:393px;
-    min-height:100vh;
+    width:393px;
 
     background:#f7f3ed;
 
@@ -36,12 +33,11 @@ body{
 
     display:grid;
 
-    grid-template-columns:
-    92px
-    1fr
-    92px;
+    grid-template-columns:92px 1fr 92px;
 
     gap:8px;
+
+    align-items:start;
 
 }
 
@@ -50,70 +46,17 @@ body{
 .right-frame{
 
     border:1px solid #4a3027;
+
     padding:8px;
-    min-height:300px;
-
-}
-
-.left-frame{
 
     display:flex;
     flex-direction:column;
+
     gap:8px;
 
 }
 
-.center-frame{
-
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-
-}
-
-.right-frame{
-
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-
-}
-
-.wolf{
-
-    height:96px;
-
-}
-
-.menu{
-
-    height:126px;
-
-}
-
-.moon{
-
-    height:108px;
-
-}
-
-.news{
-
-    height:112px;
-
-}
-
-.player{
-
-    height:90px;
-
-}
-
-.status{
-
-    height:82px;
-
-}
+/* ---------- pannelli ---------- */
 
 .panel{
 
@@ -123,4 +66,66 @@ body{
 
     border-radius:8px;
 
-    } 
+}
+
+/* ---------- sinistra ---------- */
+
+.wolf{height:96px;}
+.menu{height:126px;}
+.moon{height:108px;}
+.news{height:112px;}
+.player{height:90px;}
+.status{height:82px;}
+
+/* ---------- centro ---------- */
+
+.hero{height:110px;}
+
+.intro{height:110px;}
+
+.divider{
+
+    height:28px;
+
+}
+
+.top-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:8px;
+
+}
+
+.about,
+.currently{
+
+    height:170px;
+
+}
+
+.interests{
+
+    height:120px;
+
+}
+
+.updates{
+
+    height:180px;
+
+}
+
+/* ---------- destra ---------- */
+
+.bat{height:96px;}
+
+.extra{height:110px;}
+
+.links{height:120px;}
+
+.buttons{height:120px;}
+
+.credits{height:110px;}
