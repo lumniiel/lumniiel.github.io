@@ -1,39 +1,66 @@
+/* ==========================================================
+RESET
+========================================================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
 body{
 
     background:#111;
+
     font-family:Georgia,serif;
 
     display:flex;
     justify-content:center;
 
-    padding:10px;
+    padding:8px;
 
 }
+
+/* ==========================================================
+PAGINA
+========================================================== */
 
 .page{
 
     width:393px;
 
-    background:#f7f3ed;
+    background:#161616;
 
     border:1px solid #4a3027;
+
     border-radius:18px;
 
-    padding:10px;
+    padding:8px;
 
 }
+
+/* ==========================================================
+LAYOUT
+========================================================== */
 
 .layout{
 
     display:grid;
 
-    grid-template-columns:92px 1fr 92px;
+    grid-template-columns:
+    92px
+    1fr
+    92px;
 
     gap:8px;
 
@@ -41,55 +68,158 @@ body{
 
 }
 
-.left-frame,
-.center-frame,
-.right-frame{
+/* ==========================================================
+COLONNE
+========================================================== */
+
+.left-column,
+.center-column,
+.right-column{
+
+    display:flex;
+
+}
+
+/* ==========================================================
+TELAIO DELLE COLONNE
+========================================================== */
+
+.column-frame{
+
+    width:100%;
+
+    background:#f7f3ed;
 
     border:1px solid #4a3027;
 
-    padding:8px;
+    border-radius:10px;
+
+    padding:6px;
 
     display:flex;
+
     flex-direction:column;
 
     gap:8px;
 
 }
 
-/* ---------- pannelli ---------- */
+/* ==========================================================
+PANNELLI
+========================================================== */
 
 .panel{
 
     background:#f8f4ee;
 
-    border:2px solid #5b3b31;
+    border:1px solid #202020;
 
-    border-radius:8px;
+    border-radius:4px;
+
+    position:relative;
+
+    overflow:hidden;
 
 }
 
-/* ---------- sinistra ---------- */
+/* bordo rosso interno */
 
-.wolf{height:96px;}
-.menu{height:126px;}
-.moon{height:108px;}
-.news{height:112px;}
-.player{height:90px;}
-.status{height:82px;}
+.panel::after{
 
-/* ---------- centro ---------- */
+    content:"";
 
-.hero{height:110px;}
+    position:absolute;
 
-.intro{height:110px;}
+    top:3px;
+    bottom:3px;
+    left:3px;
+    right:3px;
+
+    border:1px dashed #7a2323;
+
+    border-radius:2px;
+
+    pointer-events:none;
+
+}
+
+/* ==========================================================
+COLONNA SINISTRA
+========================================================== */
+
+.wolf{
+
+    height:96px;
+
+}
+
+.menu{
+
+    height:145px;
+
+}
+
+.moon{
+
+    height:108px;
+
+}
+
+.news{
+
+    height:115px;
+
+}
+
+.player{
+
+    height:88px;
+
+}
+
+.status{
+
+    height:78px;
+
+}
+
+/* ==========================================================
+CENTRO
+========================================================== */
+
+.hero{
+
+    height:110px;
+
+}
+
+.intro{
+
+    height:112px;
+
+}
 
 .divider{
 
-    height:28px;
+    height:26px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
 }
 
-.top-grid{
+.divider img{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.double-grid{
 
     display:grid;
 
@@ -99,45 +229,213 @@ body{
 
 }
 
-.about,
-.currently{
-
-    height:170px;
-
-}
-
-.interests{
-
-    height:120px;
-
-}
-
-.updates{
+.about{
 
     height:180px;
 
 }
 
-/* ---------- destra ---------- */
+.currently{
 
-.bat{height:96px;}
+    height:180px;
 
-.extra{height:110px;}
+}
 
-.links{height:120px;}
+.interests{
 
-.buttons{height:120px;}
+    height:125px;
 
-.credits{height:110px;}
+}
 
-.wolf{
+.updates{
+
+    height:190px;
+
+}
+
+/* ==========================================================
+COLONNA DESTRA
+========================================================== */
+
+.bat{
+
     height:96px;
-    overflow:hidden;
+
+}
+
+.extra{
+
+    height:140px;
+
+}
+
+.links{
+
+    height:140px;
+
+}
+
+.buttons{
+
+    height:105px;
+
+}
+
+.credits{
+
+    height:120px;
+
+}
+
+/* ==========================================================
+IMMAGINI
+========================================================== */
+
+.wolf img,
+.moon img,
+.bat img,
+.hero img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.hero img{
+
+    object-position:center;
+
 }
 
 .wolf img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+
+    object-position:center;
+
+}
+
+.moon img,
+.bat img{
+
+    object-position:center;
+
+}
+
+/* ==========================================================
+MENU
+========================================================== */
+
+.menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-evenly;
+
+    padding:8px;
+
+}
+
+.menu a{
+
     display:block;
+
+    background:#5d0f0f;
+
+    color:#f5e9dd;
+
+    border:1px solid #2a0000;
+
+    padding:6px;
+
+    text-align:center;
+
+    font-size:11px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    transition:.15s;
+
+}
+
+.menu a:hover{
+
+    background:#781919;
+
+}
+
+/* ==========================================================
+TESTI BASE
+========================================================== */
+
+.news h3{
+
+    text-align:center;
+
+    font-size:12px;
+
+    color:#4a3027;
+
+    margin-top:8px;
+
+    letter-spacing:1px;
+
+}
+
+.news,
+.player,
+.status,
+.extra,
+.links,
+.buttons,
+.credits,
+.about,
+.currently,
+.interests,
+.updates,
+.intro{
+
+    padding:8px;
+
+}
+
+/* ==========================================================
+FRAME IMMAGINI
+========================================================== */
+
+.hero,
+.wolf,
+.moon,
+.bat{
+
+    padding:3px;
+
+}
+
+/* ==========================================================
+PICCOLE RIFINITURE
+========================================================== */
+
+.menu,
+.news,
+.player,
+.status,
+.extra,
+.links,
+.buttons,
+.credits,
+.about,
+.currently,
+.interests,
+.updates,
+.intro{
+
+    background:#fbf8f2;
+
 }
